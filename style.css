@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #20283a;
+    background: #f6f8fc;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 8%;
+    background: #101c3a;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a9c5ff;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #173ea5, #633ecb);
+}
+
+.hero h1 {
+    max-width: 750px;
+    margin: 10px auto;
+    font-size: clamp(36px, 6vw, 58px);
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2855d9;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero .button {
+    background: white;
+    color: #173ea5;
+}
+
+.section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 65px 24px;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #17264a12;
+}
+
+#contact-form {
+    display: grid;
+    gap: 12px;
+    max-width: 520px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd3e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: #101c3a;
+}
+
+@media (max-width: 650px) {
+    .header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
